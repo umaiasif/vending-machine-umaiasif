@@ -10,6 +10,7 @@ import com.codealong.vendingmachine.currencyanditem.VendableItem;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  *
@@ -70,7 +71,10 @@ public class VendingMachineView {
      public BigDecimal insertMoney(){
          BigDecimal result = null;
          do{
-             String input = io.readString("Insert Money: $");
+             System.out.println("insert money: $");
+           
+             
+             String input = io.readString("$");
              try{
                  result = new BigDecimal(input);
              }
@@ -90,7 +94,8 @@ public class VendingMachineView {
      public int insertChoice(int min, int max){
          int result = -1;
          do{
-             result = io.readInt("Insert Choice:", min,max);
+             System.out.println("Insert Choice:");
+             result = io.readInt("", min,max);
              if(result == -1){
                  io.print("Invalid Choice");
              }
@@ -142,7 +147,8 @@ public class VendingMachineView {
      }
      
      public boolean askToKeepVending(){
-         String userInput = io.readString("Do you want to make another purchase? (y/n)");
+         System.out.println("Do you want to make another purchase? (y/n)");
+         String userInput = io.readString("");
          return "y".equalsIgnoreCase(userInput.charAt(userInput.length() - 1)+ "");
      }
 }

@@ -138,7 +138,7 @@ public class VendingMachineDaoFileImpl implements VendingMachineDao{
             VendableItem ruffles = new VendableItem("Ruffles",new BigDecimal("0.25"),10);
             VendableItem chocolatechip = new VendableItem("Chocolate Chip",new BigDecimal("1.00"),1);
             VendableItem lays = new VendableItem("Lays",new BigDecimal("0.75"),25);
-            VendableItem phone = new VendableItem("Solid Gold Watch",new BigDecimal("2000.00"),0);
+            VendableItem phone = new VendableItem("Expensive Phone",new BigDecimal("2000.00"),0);
             inventory.put(kitkat.getName(), kitkat);
             inventory.put(coke.getName(), coke);
             inventory.put(ruffles.getName(), ruffles);

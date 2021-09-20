@@ -11,7 +11,7 @@ import java.math.BigDecimal;
  *
  * @author umair
  */
-
+//here i have used enums to denominate currency name with value
     public enum Denomination {
     PENNY         (new BigDecimal("0.01")), 
     NICKLE        (new BigDecimal("0.05")), 

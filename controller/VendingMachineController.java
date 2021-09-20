@@ -40,12 +40,14 @@ public class VendingMachineController {
             view.showBalance(getBalance());
             do{ 
                 int choice = getChoice();
+                 
                 int exitChoice = service.getAllItemsInStock().size()+1;
-                if (choice == exitChoice){
+               if (choice == exitChoice){
+                    System.out.println("Exit");
                     break;
                     //if user chooses to exit
                 }
-                
+                 
                 VendableItem item = choiceToItem(choice);
                 try{
                     BigDecimal change = vendItem(item);
