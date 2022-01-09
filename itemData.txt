@@ -1,0 +1,8 @@
+Chocolate Chip::1.00::0
+Coke::1.75::0
+Expensive Phone::2000.00::0
+KITKAT::1.25::0
+Lays::0.75::0
+Ruffles::0.25::0
+X::1.00::0
+

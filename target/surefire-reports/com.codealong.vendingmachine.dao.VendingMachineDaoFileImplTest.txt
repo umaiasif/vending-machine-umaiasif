@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.codealong.vendingmachine.dao.VendingMachineDaoFileImplTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec <<< FAILURE!
+com.codealong.vendingmachine.dao.VendingMachineDaoFileImplTest.testGetItem()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <com.codealong.vendingmachine.currencyanditem.VendableItem@eec5a4a>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:508)
+	at com.codealong.vendingmachine.dao.VendingMachineDaoFileImplTest.testGetItem(VendingMachineDaoFileImplTest.java:59)
+
+com.codealong.vendingmachine.dao.VendingMachineDaoFileImplTest.testCount()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.codealong.vendingmachine.dao.VendingMachineDaoFileImpl.setCount(VendingMachineDaoFileImpl.java:40)
+	at com.codealong.vendingmachine.dao.VendingMachineDaoFileImplTest.testCount(VendingMachineDaoFileImplTest.java:72)
+
